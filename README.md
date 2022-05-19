@@ -1,0 +1,2 @@
+# glitchcord
+A Discord Clone

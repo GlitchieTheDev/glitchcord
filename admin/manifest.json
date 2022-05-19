@@ -1,0 +1,17 @@
+{
+    "name": "PostBook Admin Client",
+    "description": "Admin access for PostBook",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "js": [
+            "src/admin.js"
+        ],
+        "css": [
+            
+        ],
+        "matches": [
+            "http://localhost:5500/*"
+        ]
+    }]
+}

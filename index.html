@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="nav">
+            <div class="nav-item">
+                <a href="#home">
+                    Home
+                </a>
+            </div>
+            <div class="nav-item invisible-logged-in hidden">
+                <a href="#signup">
+                    Sign Up
+                </a>
+            </div>
+            <div class="nav-item invisible-logged-in hidden">
+                <a href="#login">
+                    Login
+                </a>
+            </div>
+            <div class="nav-item visible-logged-in hidden">
+                <a href="#logout">
+                    Logout
+                </a>
+            </div>
+        </div>
+        <section id="login">
+            <div id="login-form">
+                <input class="textField" type="text" id="login__username-input" placeholder="Username">
+                <input class="textField" type="password" id="login__password-input" placeholder="Password">
+                <button class="btn-primary" id="login__submit">login</button>
+                <a href="#signup">Don't have an account?</a>
+                <div class="hidden warning" id="login__error">
+                    Username or Password was incorrect. Please try again.
+                </div>
+            </div>
+        </section>
+        <section id="signup">
+            <div id="signup-form">
+                <input class="textField" type="text" id="signup__username-input" placeholder="Username">
+                <input class="textField" type="password" id="signup__password-input" placeholder="Password">
+                <button class="btn-primary" id="signup__submit">Create my account</button>
+                <a href="#login">Already have an account?</a>
+                <div class="hidden warning" id="signup__error">
+                    Username already taken, try another?
+                </div>
+            </div>
+        </section>
+        <section id="home">
+            <div class="users-list">
+                <ul id="navigation-users-list">
+                    <li id="userlist_user__temp" class="hidden">
+                        <div class="userlist_user">
+                            <img src="assets/pfps/pfp1.svg">
+                            <span>_</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <div data-for="user" class="contextmenu-g hidden">
+        <button class="context-item">Lorem</button>
+        <button class="context-item">Ipsum</button>
+        <button class="context-item visible-logged-in invisible-non-admin context-item-danger">Delete User</button>
+    </div>
+
+    <script src="core/functions.js"></script>
+    <script src="users.js"></script>
+    <script src="account.js"></script>
+    <script src="ready.js"></script>
+</body>
+</html>

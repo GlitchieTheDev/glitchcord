@@ -1,0 +1,11 @@
+:root {
+    --nav-height: 50px;
+    --color-primary: rgb(79, 185, 255);
+    --color-text-primary: white;
+    --color-text-link: rgb(0, 195, 255);
+    --color-button-primary-hover: rgb(135, 207, 255);
+    --color-textField: rgb(232, 240, 254);
+    --color-light: #fff;
+    --color-danger: rgb(250, 128, 114);
+    --color-button-danger-hover: rgb(255, 169, 160);
+}
